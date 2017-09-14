@@ -45,7 +45,7 @@ def extract_song(line)
 end
 
 
-@output = File.open("downloads/nme_songs.txt", "a")
+@output = File.open("../downloads/nme_songs.txt", "a")
 
 @tag = extract_tag_name(pageurl).titleize
 

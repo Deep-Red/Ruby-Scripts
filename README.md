@@ -1,5 +1,10 @@
 # Ruby-Scripts
 
+** w_song_downloader **
+*Downloads song title and artist from wikipedia lists of songs on a given topic,
+turns out these lists are incredibly inconsistent. Has to be reworked for each
+list. Worked on a couple of articles though.
+
 ** nme_song_downloader **
 *Downloads theme/title/artist from
 nme lists

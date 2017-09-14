@@ -10,10 +10,10 @@ TIME = "week"
 
 if SORT == "top"
   @url = "http://www.reddit.com/r/#{SUBREDDIT}/#{SORT}/.json?sort=#{SORT}&t=#{TIME}"
-  @output = File.open("downloads/#{SUBREDDIT}-#{SORT}-#{TIME}.csv", "w")
+  @output = File.open("../downloads/#{SUBREDDIT}-#{SORT}-#{TIME}.csv", "w")
 else
   @url = "http://www.reddit.com/r/#{SUBREDDIT}/#{SORT}/.json?sort=#{SORT}"
-  @output = File.open("downloads/#{SUBREDDIT}-#{SORT}.csv", "w")
+  @output = File.open("../downloads/#{SUBREDDIT}-#{SORT}.csv", "w")
 end
 
 
