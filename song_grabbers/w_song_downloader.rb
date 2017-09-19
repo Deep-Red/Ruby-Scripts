@@ -34,6 +34,7 @@ def song_artist(line)
   artist = line[/"\s[Bb]y\s(.*\s)[(\s\()($)(\n)]/]
   return nil unless artist
   artist.sub! '" By ', ''
+  artist.sub! '" by ', ''
   artist.sub! /\s\($/, ''
 end
 
@@ -43,7 +44,7 @@ page.css('li').each do |line|
     line = extract_line(line)
     title = song_title(line)
     artist = song_artist(line)
-
+    puts artist
     @output.puts"#{@tag},#{title},#{artist}" if artist && title
   end
 end
