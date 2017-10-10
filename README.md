@@ -1,5 +1,9 @@
 # Ruby-Scripts
 
+**discogs_releases_extractor**
+*Extracts relelvant fields from discogs releases dbdump in sections, modeled on
+discogs_master_extractor, the two could and probably should be combined*
+
 **discogs_master_extractor**
 *Extracts relevant fields from discogs master dbdump in sections so lower resource computers won't crash.*
 
